@@ -28,6 +28,7 @@ class PocoConan(ConanFile):
                "enable_crypto": [True, False],
                "enable_data": [True, False],
                "enable_data_sqlite": [True, False],
+               "enable_data_postgresql": [True, False],
                "enable_data_mysql": [True, False],
                "enable_data_odbc": [True, False],
                "enable_sevenzip": [True, False],
@@ -58,6 +59,7 @@ enable_crypto=True
 enable_data=True
 enable_data_sqlite=True
 enable_data_mysql=False
+enable_data_postgresql=True
 enable_data_odbc=False
 enable_sevenzip=False
 enable_zip=True
@@ -159,6 +161,7 @@ cxx_14=False
                 ("enable_net", "PocoNet"),
                 ("enable_crypto", "PocoCrypto"),
                 ("enable_data_sqlite", "PocoDataSQLite"),
+                ("enable_data_postgresql", "PocoDataPostgreSQL"),
                 ("enable_data_mysql", "PocoDataMySQL"),
                 ("enable_data_odbc", "PocoDataODBC"),
                 ("enable_data", "PocoData"),
